@@ -180,3 +180,4 @@ dataset_images/test/
 dataset_images/veiculos.yaml
 yolov5/
 yolov5s.pt
+veiculos_local.yaml

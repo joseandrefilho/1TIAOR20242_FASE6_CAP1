@@ -1,0 +1,14 @@
+# train: ../dataset_images/images/train/
+# val: ../dataset_images/images/val/
+
+train: ../../../dataset_images/images/train/
+val: ../../../dataset_images/images/val/
+test: ../../../dataset_images/images/test/
+
+
+nc: 2
+names: # Defina aqui as labels do seu dataset
+  0: "Carro"
+  1: "Moto"
+  
+

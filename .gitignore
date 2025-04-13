@@ -174,10 +174,7 @@ cython_debug/
 .pypirc
 
 # Pastas do projeto que não podem subir para o repositório
-dataset_images/images/
-dataset_images/labels/
-dataset_images/test/
-dataset_images/veiculos.yaml
+dataset_images/
+dataset_cnn/
 yolov5/
 yolov5s.pt
-veiculos_local.yaml

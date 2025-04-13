@@ -172,3 +172,11 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Pastas do projeto que não podem subir para o repositório
+dataset_images/images/
+dataset_images/labels/
+dataset_images/test/
+dataset_images/veiculos.yaml
+yolov5/
+yolov5s.pt

@@ -1,14 +1,16 @@
+
 # FIAP - Faculdade de Informática e Administração Paulista
 
 <p align="center">
-<a href= "https://www.fiap.com.br/"><img src="assets/logo-fiap.png" alt="FIAP - Faculdade de Informática e Admnistração Paulista" border="0" width=40% height=40%></a>
+<a href="https://www.fiap.com.br/"><img src="assets/logo-fiap.png" alt="FIAP - Faculdade de Informática e Administração Paulista" border="0" width="40%" height="40%"></a>
 </p>
 
-<br>
+---
 
-# Cap 1 - Despertar da rede neural
+# Capítulo 1 – Despertar da Rede Neural  
+### Projeto PBL - Fase 6
 
-## Nome do grupo
+---
 
 ## 👨‍🎓 Integrantes:
 
@@ -17,29 +19,107 @@
 - <a href="https://www.linkedin.com/in/ricardolcoube/">Ricardo Lourenço Coube</a>
 - <a href="https://www.linkedin.com/in/joseandrefilho">Jose Andre Filho</a>
 
-## 👩‍🏫 Professores:
+---
+
+## 👨‍🏫 Professores
 
 ### Tutor(a)
-
-- <a href="https://https://www.linkedin.com/in/leonardoorabona/">Leonardo Ruiz Orabona</a>
+- [Leonardo Ruiz Orabona](https://www.linkedin.com/in/leonardoorabona)
 
 ### Coordenador(a)
+- [André Godoi](https://www.linkedin.com/in/profandregodoi)
 
-- <a href="https://www.linkedin.com/in/profandregodoi/">André Godoi</a>
+---
 
-## 📜 Descrição
+## 📌 Descrição do Projeto
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum varius sed est nec rutrum. Vivamus mollis purus porta, mollis ex ac, ullamcorper ante. In blandit malesuada egestas. Curabitur quis lorem id ligula venenatis vulputate ut at metus. Proin non sollicitudin ante. Aenean egestas turpis lacus, et dictum lectus fringilla ut. Vestibulum sagittis et tortor quis rhoncus. Mauris in est nisl. Aliquam congue ex sit amet congue finibus. Vestibulum eget justo mauris.
+O objetivo desta fase do projeto é aplicar uma rede neural prática com foco em visão computacional, utilizando o modelo YOLOv5 para identificar objetos em imagens.
 
-## 📁 Estrutura de pastas
+A proposta simula uma situação real, em que a empresa fictícia FarmTech Solutions está expandindo seus serviços com o uso de IA em segurança patrimonial e controle de acessos. Para isso, foi desenvolvido um modelo de detecção de **carros** e **motos**, com posterior comparação entre diferentes abordagens de IA.
 
-Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
+---
 
-- <b>assets</b>: aqui estão os arquivos relacionados a elementos não-estruturados deste repositório, como imagens.
+## 📦 Estrutura do Projeto
 
-- <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
+```bash
+1TIAOR20242_FASE6_CAP1/
+│
+├── dataset_images/             # Conjunto de imagens e rótulos rotulados manualmente
+│   ├── images/                 # Subpastas: train/, val/, test/
+│   └── labels/                 # Subpastas: train/, val/, test/
+│
+├── veiculos.yaml               # Arquivo de configuração para o YOLOv5
+├── README.md                   # Este arquivo
+├── <notebook>.ipynb            # Notebook do projeto com código, análises e resultados
+└── assets/                     # Imagens para documentação e apresentação
+```
 
+---
 
-## 📋 Licença
+## ✅ Entrega 1 – Detecção com YOLOv5 Adaptado
 
-<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/agodoi/template">MODELO GIT FIAP</a> por <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://fiap.com.br">Fiap</a> está licenciado sobre <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
+Nesta primeira etapa, foi desenvolvido um sistema de detecção de veículos utilizando YOLOv5 customizado. As etapas realizadas incluíram:
+
+- Organização e rotulagem de dataset com 80 imagens (40 de cada classe).
+- Separação em treino, validação e teste conforme exigido.
+- Treinamento do modelo com duas quantidades de épocas:
+  - **30 épocas**: desempenho base
+  - **60 épocas**: avaliação de melhoria
+- Visualização das métricas e curvas de aprendizado (`results.png`)
+- Inferência nas imagens de teste com medição de tempo
+- Análise comparativa entre os dois modelos
+- Conclusão baseada em precisão, tempo de execução e cobertura
+
+📌 Link para o notebook:  
+👉 [Clique aqui para abrir no Colab](https://colab.research.google.com/drive/SEU_LINK_AQUI)
+
+📺 Link do vídeo de demonstração (YouTube – não listado):  
+👉 [Assistir no YouTube](https://youtube.com/SEU_LINK_AQUI)
+
+---
+
+## 🔄 Entrega 2 – Comparação entre Abordagens
+
+A Entrega 2 propõe a avaliação de diferentes soluções para o mesmo problema de detecção/classificação, visando compreender a eficácia e aplicabilidade de cada abordagem.
+
+### 🔹 Abordagens previstas
+
+1. **YOLOv5 Adaptado** (modelo treinado na Entrega 1)
+2. **YOLO Tradicional** (modelo pré-treinado, sem fine-tuning)
+3. **CNN do Zero** (modelo de classificação usando arquitetura simples)
+
+### 🔍 Critérios de comparação
+
+- Facilidade de uso e integração
+- Precisão da solução
+- Tempo de treinamento (quando aplicável)
+- Tempo de inferência
+- Qualidade dos resultados (visuais ou métricos)
+
+### 🛠️ Estrutura prevista das seções
+
+```markdown
+## 1. Aplicação do YOLO Tradicional
+- Carregamento do modelo
+- Avaliação qualitativa em imagens do dataset
+
+## 2. Construção e Treinamento da CNN do Zero
+- Preparação dos dados
+- Arquitetura da rede
+- Métricas e avaliação
+
+## 3. Comparativo Geral entre os Modelos
+- Tabela comparativa
+- Conclusão sobre desempenho e aplicabilidade
+```
+
+Essas seções serão preenchidas com os resultados obtidos a partir das execuções práticas.
+
+---
+
+## 📝 Licença
+
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+Este projeto segue o modelo FIAP e está licenciado sob 
+<a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">Attribution 4.0 International (CC BY 4.0)</a>.
+</p>

@@ -176,3 +176,6 @@ cython_debug/
 # Pastas do projeto que não podem subir para o repositório
 yolov5/
 yolov5s.pt
+
+#models
+*.keras

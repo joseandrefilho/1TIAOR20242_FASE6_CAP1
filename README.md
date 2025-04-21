@@ -32,89 +32,81 @@
 ---
 
 ## 📌 Descrição do Projeto
+Este repositório apresenta o projeto da Fase 6 do curso 1TIAOR20242 da FIAP, desenvolvido no contexto do Projeto Baseado em Problemas (PBL).  
+O desafio proposto pela empresa fictícia **FarmTech Solutions** envolveu a aplicação de técnicas de **Visão Computacional** com foco em:
 
-O objetivo desta fase do projeto é aplicar uma rede neural prática com foco em visão computacional, utilizando o modelo YOLOv5 para identificar objetos em imagens.
+- 📦 Detecção de objetos
+- 🧠 Classificação de imagens
+- 🛠️ Comparação entre arquiteturas modernas de IA
 
-A proposta simula uma situação real, em que a empresa fictícia FarmTech Solutions está expandindo seus serviços com o uso de IA em segurança patrimonial e controle de acessos. Para isso, foi desenvolvido um modelo de detecção de **carros** e **motos**, com posterior comparação entre diferentes abordagens de IA.
+---
+## 📦 Entregas do Projeto
+
+### 🧩 Entrega 1 – YOLOv5 Adaptado
+Desenvolvimento completo de um sistema de detecção de veículos (**carros** e **motos**) utilizando o modelo **YOLOv5**, treinado com dataset customizado.
+
+🔗 [`README_entrega01.md`](./README_entrega01.md)  
+📓 [`Notebook Entrega 1`](./notebooks/Entrega01_YOLOv5_adaptado.ipynb)
 
 ---
 
-## 📦 Estrutura do Projeto
+### 🧪 Entrega 2 – Comparação entre Abordagens
 
-```bash
-1TIAOR20242_FASE6_CAP1/
-│
-├── dataset_images/             # Conjunto de imagens e rótulos rotulados manualmente
-│   ├── images/                 # Subpastas: train/, val/, test/
-│   └── labels/                 # Subpastas: train/, val/, test/
-│
-├── veiculos.yaml               # Arquivo de configuração para o YOLOv5
-├── README.md                   # Este arquivo
-├── <notebook>.ipynb            # Notebook do projeto com código, análises e resultados
-└── assets/                     # Imagens para documentação e apresentação
+Comparação entre três abordagens distintas:
+- ✅ YOLOv5 adaptado (com re-treinamento)
+- 📦 YOLOv5 tradicional (pré-treinado, sem ajustes)
+- 🧱 CNN do zero (classificação binária com softmax)
+
+🔗 [`README_entrega02.md`](./README_entrega02.md)  
+📓 [`Notebook Entrega 2`](./notebooks/Entrega02_Comparacao_YOLO_CNN.ipynb)
+
+---
+
+---
+
+## 📈 Principais Aprendizados
+
+- Diferença prática entre **detecção e classificação**
+- Importância da **personalização de modelos** (ex: YOLO adaptado vs tradicional)
+- Limitações e pontos fortes de abordagens como **CNNs simples**
+- Boas práticas de organização de projetos em **notebooks e GitHub**
+- Técnicas para análise crítica de resultados com **métricas e visualizações**
+
+---
+
+## 🧗‍♀️ Desafios Enfrentados
+
+- Curadoria e organização do dataset (imagens balanceadas, rotulagem no MakeSense)
+- Configuração de ambiente local com GPU e integração com Google Colab
+- Interpretação de métricas complexas como mAP e F1-score
+- Prevenção de overfitting em treinos com CNN
+
+---
+
+## ▶️ Demonstração em Vídeo
+
+🎥 Link para o vídeo de apresentação (YouTube – não listado): **[inserir aqui]**
+
+---
+
+## 📁 Estrutura Geral do Projeto
+
 ```
-
----
-
-## ✅ Entrega 1 – Detecção com YOLOv5 Adaptado
-
-Nesta primeira etapa, foi desenvolvido um sistema de detecção de veículos utilizando YOLOv5 customizado. As etapas realizadas incluíram:
-
-- Organização e rotulagem de dataset com 80 imagens (40 de cada classe).
-- Separação em treino, validação e teste conforme exigido.
-- Treinamento do modelo com duas quantidades de épocas:
-  - **30 épocas**: desempenho base
-  - **60 épocas**: avaliação de melhoria
-- Visualização das métricas e curvas de aprendizado (`results.png`)
-- Inferência nas imagens de teste com medição de tempo
-- Análise comparativa entre os dois modelos
-- Conclusão baseada em precisão, tempo de execução e cobertura
-
-📌 Link para o notebook:  
-👉 [Clique aqui para abrir no Colab](https://colab.research.google.com/drive/SEU_LINK_AQUI)
-
-📺 Link do vídeo de demonstração (YouTube – não listado):  
-👉 [Assistir no YouTube](https://youtube.com/SEU_LINK_AQUI)
-
----
-
-## 🔄 Entrega 2 – Comparação entre Abordagens
-
-A Entrega 2 propõe a avaliação de diferentes soluções para o mesmo problema de detecção/classificação, visando compreender a eficácia e aplicabilidade de cada abordagem.
-
-### 🔹 Abordagens previstas
-
-1. **YOLOv5 Adaptado** (modelo treinado na Entrega 1)
-2. **YOLO Tradicional** (modelo pré-treinado, sem fine-tuning)
-3. **CNN do Zero** (modelo de classificação usando arquitetura simples)
-
-### 🔍 Critérios de comparação
-
-- Facilidade de uso e integração
-- Precisão da solução
-- Tempo de treinamento (quando aplicável)
-- Tempo de inferência
-- Qualidade dos resultados (visuais ou métricos)
-
-### 🛠️ Estrutura prevista das seções
-
-```markdown
-## 1. Aplicação do YOLO Tradicional
-- Carregamento do modelo
-- Avaliação qualitativa em imagens do dataset
-
-## 2. Construção e Treinamento da CNN do Zero
-- Preparação dos dados
-- Arquitetura da rede
-- Métricas e avaliação
-
-## 3. Comparativo Geral entre os Modelos
-- Tabela comparativa
-- Conclusão sobre desempenho e aplicabilidade
+📦 1TIAOR20242_FASE6_CAP1
+│
+├── 📁 notebooks
+│   ├── Entrega01_YOLOv5_adaptado.ipynb
+│   ├── Entrega02_Comparacao_YOLO_CNN.ipynb
+│
+├── 📁 dataset_images          # Para treino do YOLO
+├── 📁 dataset_cnn             # Para treino da CNN
+├── 📁 modelos                 # Modelos salvos (.pt, .keras)
+│
+├── 📄 README.md               # Este arquivo
+├── 📄 README_entrega01.md
+├── 📄 README_entrega02.md
+└── 📄 requirements.txt
 ```
-
-Essas seções serão preenchidas com os resultados obtidos a partir das execuções práticas.
-
 ---
 
 ## 📝 Licença

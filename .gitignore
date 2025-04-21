@@ -178,4 +178,4 @@ yolov5/
 yolov5s.pt
 
 #models
-*.keras
+*.kerasmodels/*.keras

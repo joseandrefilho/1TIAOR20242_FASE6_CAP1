@@ -11,24 +11,21 @@
 Este repositório contém a **Entrega 1** do Projeto da Fase 6 da FIAP, onde desenvolvemos um sistema de visão computacional para detecção de veículos usando YOLOv5 adaptado.
 
 
-## Nome do grupo
+---
 
 ## 👨‍🎓 Integrantes:
 
-- <a href="https://www.linkedin.com/in/">Edmar Ferreira Souza</a>
-- <a href="https://www.linkedin.com/in/alexomantovani">Alexandre Oliveira Mantovani</a>
-- <a href="https://www.linkedin.com/in/ricardolcoube/">Ricardo Lourenço Coube</a>
-- <a href="https://www.linkedin.com/in/joseandrefilho">Jose Andre Filho</a>
+- [Edmar Ferreira Souza](https://www.linkedin.com/in/)
+- [Alexandre Oliveira Mantovani](https://www.linkedin.com/in/alexomantovani)
+- [Ricardo Lourenço Coube](https://www.linkedin.com/in/ricardolcoube/)
+- [Jose Andre Filho](https://www.linkedin.com/in/joseandrefilho)
 
 ## 👩‍🏫 Professores:
 
-### Tutor(a)
+- Tutor: [Leonardo Ruiz Orabona](https://www.linkedin.com/in/leonardoorabona)
+- Coordenador: [André Godoi](https://www.linkedin.com/in/profandregodoi)
 
-- <a href="https://https://www.linkedin.com/in/leonardoorabona/">Leonardo Ruiz Orabona</a>
-
-### Coordenador(a)
-
-- <a href="https://www.linkedin.com/in/profandregodoi/">André Godoi</a>
+---
 
 ## 📜 Descrição
 

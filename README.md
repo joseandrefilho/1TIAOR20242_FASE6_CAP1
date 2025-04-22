@@ -14,20 +14,15 @@
 
 ## 👨‍🎓 Integrantes:
 
-- <a href="https://www.linkedin.com/in/">Edmar Ferreira Souza</a>
-- <a href="https://www.linkedin.com/in/alexomantovani">Alexandre Oliveira Mantovani</a>
-- <a href="https://www.linkedin.com/in/ricardolcoube/">Ricardo Lourenço Coube</a>
-- <a href="https://www.linkedin.com/in/joseandrefilho">Jose Andre Filho</a>
+- [Edmar Ferreira Souza](https://www.linkedin.com/in/)
+- [Alexandre Oliveira Mantovani](https://www.linkedin.com/in/alexomantovani)
+- [Ricardo Lourenço Coube](https://www.linkedin.com/in/ricardolcoube/)
+- [Jose Andre Filho](https://www.linkedin.com/in/joseandrefilho)
 
----
+## 👩‍🏫 Professores:
 
-## 👨‍🏫 Professores
-
-### Tutor(a)
-- [Leonardo Ruiz Orabona](https://www.linkedin.com/in/leonardoorabona)
-
-### Coordenador(a)
-- [André Godoi](https://www.linkedin.com/in/profandregodoi)
+- Tutor: [Leonardo Ruiz Orabona](https://www.linkedin.com/in/leonardoorabona)
+- Coordenador: [André Godoi](https://www.linkedin.com/in/profandregodoi)
 
 ---
 
@@ -45,7 +40,7 @@ O desafio proposto pela empresa fictícia **FarmTech Solutions** envolveu a apli
 ### 🧩 Entrega 1 – YOLOv5 Adaptado
 Desenvolvimento completo de um sistema de detecção de veículos (**carros** e **motos**) utilizando o modelo **YOLOv5**, treinado com dataset customizado.
 
-🔗 [`README_entrega01.md`](./README_entrega01.md)  
+🔗 [`README_entrega01.md`](./notebooks/README_entrega01.md)  
 📓 [`Notebook Entrega 1`](./notebooks/Entrega01_YOLOv5_adaptado.ipynb)
 
 ---
@@ -57,7 +52,7 @@ Comparação entre três abordagens distintas:
 - 📦 YOLOv5 tradicional (pré-treinado, sem ajustes)
 - 🧱 CNN do zero (classificação binária com softmax)
 
-🔗 [`README_entrega02.md`](./README_entrega02.md)  
+🔗 [`README_entrega02.md`](./notebooks/README_entrega02.md)  
 📓 [`Notebook Entrega 2`](./notebooks/Entrega02_Comparacao_YOLO_CNN.ipynb)
 
 ---
@@ -94,18 +89,18 @@ Comparação entre três abordagens distintas:
 ```
 📦 1TIAOR20242_FASE6_CAP1
 │
+│── 📁 configurations                                   
+│   ├── 📄 veiculos_local.yaml                          # Configuração para uso local (caminhos relativos) 
+│   ├── 📄 veiculos.yaml                                # Configuração para uso no Colab (caminhos absolutos) 
+├── 📁 dataset_cnn                                      # Para treino da CNN
+├── 📁 dataset_images                                   # Para treino do YOLO
 ├── 📁 notebooks
-│   ├── Entrega01_YOLOv5_adaptado.ipynb
-│   ├── Entrega02_Comparacao_YOLO_CNN.ipynb
-│
-├── 📁 dataset_images          # Para treino do YOLO
-├── 📁 dataset_cnn             # Para treino da CNN
-├── 📁 modelos                 # Modelos salvos (.pt, .keras)
-│
-├── 📄 README.md               # Este arquivo
-├── 📄 README_entrega01.md
-├── 📄 README_entrega02.md
-└── 📄 requirements.txt
+│   ├── 📄 Entrega01_YOLOv5_adaptado.ipynb              # Notebook da entrega 01
+│   ├── 📄 Entrega02_Comparacao_YOLO_CNN.ipynb          # Notebook da entrega 02
+│   ├── 📄 README_entrega01.md                          # Readme contendo a documentação da entrega 01
+│   ├── 📄 README_entrega02.md                          # Readme contendo a documentação da entrega 02
+├── 📄 README.md                                        # Este arquivo
+└── 📄 requirements.txt                                 
 ```
 ---
 

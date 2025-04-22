@@ -103,6 +103,36 @@ Comparação entre três abordagens distintas:
 └── 📄 requirements.txt                                 
 ```
 ---
+## 🛠️ Como Executar o Projeto
+
+### 🔁 Execução no Google Colab
+1. Acesse o notebook da entrega desejada na pasta `notebooks/`.
+2. Execute as células sequencialmente.
+3. Conecte seu Google Drive quando solicitado.
+4. Garanta que as imagens estejam no Google Drive e que os arquivos de configuração estejam na pasta correta.
+5. Verifique se os caminhos das pastas e modelos estão corretos.
+
+### 💻 Execução Local
+1. Certifique-se de ter uma GPU compatível (NVIDIA) com CUDA.
+2. Clone este repositório:
+```bash
+git clone https://github.com/seuusuario/seurepositorio.git
+cd seurepositorio
+```
+3. Ative um ambiente virtual e instale os requisitos.
+4. Execute os notebooks via Jupyter ou VSCode.
+
+### ✅ Requisitos
+Antes de tudo, instale as dependências listadas no arquivo `requirements.txt`:
+
+```bash
+pip install -r requirements.txt
+```
+
+> Obs.: O projeto detecta automaticamente se está no Colab ou local e adapta os caminhos conforme o ambiente.
+
+---
+
 
 ## 📝 Licença
 

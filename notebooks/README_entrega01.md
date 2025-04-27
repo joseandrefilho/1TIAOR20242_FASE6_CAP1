@@ -109,15 +109,11 @@ As comparações incluem:
 - 🔄 Ter suporte para Colab e execução local traz flexibilidade para o desenvolvimento e testes
 - 🛠️ Ferramentas como MakeSense.ai aceleram a rotulagem e padronizam o dataset
 
-## ▶️ Demonstração em Vídeo
-
-🎥 Link do vídeo (YouTube - não listado): **[insira aqui o link após subir o vídeo]**
-
 ## 📓 Notebook
 
 📥 Acesse o notebook da entrega 1 aqui:
 
-[`1TIAOR20242_FASE6_CAP1_Entrega01.ipynb`](./1TIAOR20242_FASE6_CAP1_Entrega01.ipynb)
+[`1TIAOR20242_FASE6_CAP1_Entrega01.ipynb`](./Entrega01_YOLOv5_adaptado.ipynb)
 
 ---
 

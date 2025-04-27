@@ -89,21 +89,11 @@ Além disso, a CNN foi treinada em duas configurações:
 
 ---
 
-## ▶️ Demonstração em Vídeo
-
-🎥 Link do vídeo (YouTube – não listado): **[insira aqui o link]**
-
----
-
 ## 📓 Notebooks
 
 📥 Acesse o notebook desta entrega:
 
-[`Entrega02_Comparacao_YOLO_CNN.ipynb`](./notebooks/Entrega02_Comparacao_YOLO_CNN.ipynb)
-
-📁 Consulte também a Entrega 1:
-
-[`Entrega01_YOLOv5_adaptado.ipynb`](./notebooks/Entrega01_YOLOv5_adaptado.ipynb)
+[`Entrega02_Comparacao_YOLO_CNN.ipynb`](./Entrega02_Comparacao_YOLO_CNN.ipynb)
 
 ---
 

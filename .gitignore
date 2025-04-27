@@ -56,7 +56,7 @@ cover/
 *.pot
 
 # Django stuff:
-*.log
+#*.log
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
@@ -172,3 +172,12 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Pastas do projeto que não podem subir para o repositório
+yolov5/
+yolov5s.pt
+
+#models
+*.kerasmodels
+*.keras
+*.h5

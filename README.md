@@ -116,7 +116,7 @@ Comparação entre três abordagens distintas:
 1. Certifique-se de ter uma GPU compatível (NVIDIA) com CUDA.
 2. Clone este repositório:
 ```bash
-git clone https://github.com/seuusuario/seurepositorio.git
+git clone https://github.com/joseandrefilho/1TIAOR20242_FASE6_CAP1.git
 cd seurepositorio
 ```
 3. Ative um ambiente virtual e instale os requisitos.

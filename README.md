@@ -80,7 +80,7 @@ Comparação entre três abordagens distintas:
 
 ## ▶️ Demonstração em Vídeo
 
-🎥 Link para o vídeo de apresentação (YouTube – não listado): **[inserir aqui]**
+🎥 Link para o vídeo de apresentação (YouTube – não listado): **[\[Clique aqui\]](https://youtu.be/OYT0TIxygZY)**
 
 ---
 
